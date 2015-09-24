@@ -1,13 +1,75 @@
-html, body, div, .class, .id, .ul, .li {
+/* Browser Basic style */
+
+html { 
+  background: url('img/food.jpeg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Merriweather', monospace;
+}
+html, body {
 	padding: 0;
 	margin: 0;
 	vertical-align: 0;
 	font-size: 100%;
+    color: #ffffff;
 }
 
+/* Title & Such */
 .heading {
-	background-image: url('img/food.jpeg');
-	margin-top: 5rem;
+	margin-top: -1.5rem;
 	padding-bottom: auto;
 	height: 10rem;
+    text-align: center;
+
+}
+
+/* Input Button */
+
+.add-button {
+    border-radius: 1px;
+    background-color: brown;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Interactive Addition to the List & Input */
+.add {
+    line-height: inherit;
+    border-radius: 5rem;
+    color: #eeeeee;
+    margin-left: 40rem;
+}
+
+.buy, .bought {
+    height: 20px;
+    width: 20rem;
+    border-radius: 10px;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    padding-left: 1rem;
+}
+.bought {
+    text-decoration: line-through;
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.item {
+    font-size: 10px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    border: 1px dashed #dddddd;
+    border-radius: 3px;
+    padding: 3px;
+    margin-right: 5px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Copyright and Links */
+
+.footy {
+    padding-top: 22.5rem;
+
 }

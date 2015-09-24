@@ -1,27 +1,24 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
-	// Validate text box, then add value in text box to list
+	// When the user click the "Add Item" button
+	$('.add-button').on('click', function() {
+		var newItem = $('input.add-item').val();
 
-	$('#add-button').click(function() {
-		if( $('input#add-item').val().trim().length == 0 ) {
-				// alert("put something here");
-				$('#alert').show();
-				$('input#add-item').val("");
-		} else { 
+			// Alert: When the user enters less than required 
+			if (newItem == 0) {
+			alert("Enter an item. Please and thank you!");
 
-		$('ul').append('<li class="buy"><button class="item">X</button>' + $('input#add-item').val() + '</li>');
-		$('input#add-item').val("");
-		$('#alert').hide();
+		};
 
-		};	
-	
+			// When the user enter a new item
+			$('ul').append('<li class="buy"><button class="item">Got it!</button>' + newItem + '</li>');
+
 	});
 
-	// Change class when user clicks Done button	
-
-	$('ul').on('click', '.list', function() {
-		$(this).closest('li').toggleClass('buy', 'bought');
+		// When the user wants to remove or have bought an item
+		$('ul').on('click', '.item', function() {
+		$(this).closest('li').toggleClass('buy bought');
 		$(this).remove();
+		$(this).css('text-declaration', 'line-through');
 	});
-
 });
