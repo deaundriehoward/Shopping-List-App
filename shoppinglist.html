@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+  <head>
+    <meta charset="UTF-8">
+      <title> Shopping List </title>
+      <link rel="icon" href="favicon.ico" type="img/checklist.svg">
+      <link rel="stylesheet" href="shoppinglist.css">
+      <script src="jquery-2.1.4.js"></script>
+      <script src="app.js"></script>
+  </head>
+  <body>
+  <nav class="nav">
+    <div class="content">
+     <img class="logo" tite="TheList" src="img/checklist.svg" alt="check list by Nikolay Necheuhin from the Noun Project" width="100" height="100">
+      <ul class="links">
+        <li class="active"> <a href="index.html"> Home </a> </li>
+        <li> Grocery List (Coming Soon!) </li>
+        <li> <a href="shoppinglist.html"> Shopping List </a></li>
+        <li> To- Do List (Coming Soon!)</li>
+      </ul>
+    </div>
+  </nav>
+  <heading>
+    <div class="intro">
+        <h1> Shop Til' You Drop </h1>
+        <h2>...or at least until you get everything on your list</h2>
+        <p> By De'Aundrie Howard </p>
+    </div>
+  </heading>
+  <section class="input" style="float:left; width=100%; margin-left:25rem">
+  <h5> Add Item </h5>
+  <hr />
+    <div  class="add">
+      <p> Item Name: <input class="add-item" type="text" placeholder="Enter Item Here"> </p>
+      </div>
+    <div class="description">
+      <p> Note/Instruction: <input class="note" tyep="text" placeholder="Enter Instructions Here"> </p>
+    </div>
+    <div class="category">
+      <p> Category: <select class="categories">
+                      <option value="dairy"> Dairy </option>
+                      <option value="meat"> Meat & Poultry </option>
+                      <option value="produce"> Fruits & Veggies </option>
+                      <option value="grains"> Grains & Fiber </option>
+                      <option value="desserts"> Desserts </option>
+                      <option value="beverages"> Beverages </option>
+                    </select>
+      </p>
+    </div>
+    <div class="add-button">
+      <button type="button"> Click Me to Add Item! </button>
+    </div>
+  </section>
+  <section class="total" style="float:right; width=100%; margin-right:25rem">
+    <div class="list">
+      <h5 style="text-align:center;"> Items </h5>
+      <hr />
+      <ol>
+        <li class="bought"> Eggplants <input class="quantity" type="number" min="1" max="1000" value="1">
+        </li>
+        <li class="bought"> Green Beans <input class="quantity" type="number" min="1" max="1000" value="1"> </li>
+        <li class="buy"> Slice Carrots <input class="quantity" type="number" min="1" max="1000" value="1"> <button class="item">Got It!</button> </li>
+        <li>Chicken <input class="quantity" type="number" min="1" max="1000" value="1"> </li>
+        <li> Grass-fed Beef Stir-Fry Tip <input class="quantity" type="number" min="1" max="1000" value="1"> </li>
+      </ol>
+    </div>
+  </section>
+  <footer class="footy">
+    <p> &copy De'Aundrie Howard, Inc </p>
+  </footer>
+</body>
+</html>

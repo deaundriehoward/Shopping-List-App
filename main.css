@@ -1,75 +1,54 @@
 /* Browser Basic style */
-
-html { 
-  background: url('img/food.jpeg') no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  font-family: 'Merriweather', monospace;
-}
-html, body {
+html {
 	padding: 0;
 	margin: 0;
-	vertical-align: 0;
-	font-size: 100%;
+	vertical-align: baseline;
+    letter-spacing: 1px;
+   background-color: #000000;
+    text-align: center;
     color: #ffffff;
 }
 
 /* Title & Such */
-.heading {
-	margin-top: -1.5rem;
-	padding-bottom: auto;
-	height: 10rem;
-    text-align: center;
+.nav {
+	height: 5rem;
+    color: #ffffff;
+    background-color: DimGray;
+}
 
+.nav .content .links {
+    float: right;
+    cursor: pointer;
+}
+
+.nav .content li {
+    display: inline-block;
+    margin-left: 5rem;
+    padding-right: 5rem;
+    border-right: 1px solid #ffffff;
+    border-spacing: 2px;
+} 
+
+.nav li:active {
+    color: #4c5058;
+}
+
+.intro {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 500;
+    padding-top: 5rem;
+}
+
+.intro h1, .intro h6 {
+    margin-top: -2.5rem;
 }
 
 /* Input Button */
 
 .add-button {
     border-radius: 1px;
-    background-color: brown;
     font-family: 'Roboto', sans-serif;
-}
-
-/* Interactive Addition to the List & Input */
-.add {
-    line-height: inherit;
-    border-radius: 5rem;
-    color: #eeeeee;
-    margin-left: 40rem;
-}
-
-.buy, .bought {
-    height: 20px;
-    width: 20rem;
-    border-radius: 10px;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-    padding-left: 1rem;
-}
-.bought {
-    text-decoration: line-through;
-    color: #ffffff;
-    border: 1px solid #ffffff;
-}
-
-.item {
-    font-size: 10px;
-    text-transform: uppercase;
-    background-color: #ffffff;
-    border: 1px dashed #dddddd;
-    border-radius: 3px;
-    padding: 3px;
-    margin-right: 5px;
-    font-weight: bolder;
-    text-decoration: none;
-}
-
-/* Copyright and Links */
-
-.footy {
-    padding-top: 22.5rem;
-
 }

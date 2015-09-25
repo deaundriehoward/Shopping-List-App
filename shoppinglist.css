@@ -1,0 +1,103 @@
+/* Browser Basic style */
+html {
+    padding: 0;
+    margin: 0;
+    vertical-align: baseline;
+    letter-spacing: 1px;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Title & Such */
+.nav {
+    height: 5rem;
+    color: #ffffff;
+    background-color: DimGray;
+}
+
+.nav .content .links {
+    float: right;
+    cursor: pointer;
+}
+
+.nav .content li {
+    display: inline-block;
+    margin-left: 5rem;
+    padding-right: 5rem;
+    border-right: 1px solid #ffffff;
+    border-spacing: 2px;
+} 
+
+.nav li:active {
+    color: #4c5058;
+}
+
+.nav li:visited {
+    color: white;
+}
+
+/* Intro */
+
+.intro {
+    text-align: center;
+}
+
+/* Interactive Addition to the List & Input */
+.add {
+    line-height: inherit;
+    color: #ffffff;
+  font-family: 'Merriweather', serif;
+}
+
+.add, .description, .category {
+    border-radius: 5px;
+    text-align: center;
+}
+
+.description {
+    margin-right: 3.5rem;
+}
+
+.category select {
+    margin-right: 1rem;
+}
+
+/* Button */
+.button {
+    margin-left: 25rem;
+}
+
+section {
+    padding-top: 5rem;
+}
+
+/* List of Items */
+.list li {
+    margin-top: 5px;
+    color: #ffffff;
+}
+.buy, .bought {
+    height: 20px;
+    width: 15rem;
+    color: #ffffff;
+}
+.bought {
+    text-decoration: line-through;
+    color: #ffffff;
+}
+.item {
+    font-size: 10px;
+    border: 1px dashed #ffffff;
+    border-radius: 3px;
+    padding: 3px;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+/* Footy McGee */
+
+.footy {
+    padding-top: 25rem;
+    margin-left: 5rem;
+    text-align: center;
+}
