@@ -11,12 +11,12 @@ $(document).ready(function() {
 			var newNote = $('input.note').val();
 			var newCat = $('select.categories').val();
 
-			$('ol').append('<li class="buy"><button class="item"> Got it! </button>' + newItem + newNote + newCat + '</li>');
+			$('.list').append('<p class="buy">' + newItem + newNote + newCat + $('.quantity') + '<button class="item"> Got it! </button>' + '</p>');
 	});
 
 		// When the user wants to remove or have bought an item
 		$('ol').on('click', '.item', function() {
 		$(this).closest('li').toggleClass('buy bought');
-		$(this).remove('input.quantity');
+		$(this).remove();
 	});
 });
